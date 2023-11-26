@@ -1,0 +1,51 @@
+﻿<UserControl x:Class="CryptoCurr.View.ConvertorView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CryptoCurr.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <TextBlock Text="Convertor"
+                   FontSize="30"
+                   Foreground="{DynamicResource Radio}"
+                   Margin="40,0,0,0"/>
+        <TextBox x:Name="Rate"
+                 Width="120"
+                 Height="20"
+                 Margin="0,0,0,200"/>
+        <Label Content="Exchange Rate"
+               VerticalAlignment="Center"
+               HorizontalAlignment="Center"
+               FontSize="20"
+               Foreground="{DynamicResource Radio}"
+               Margin="0,0,0,280"/>
+        <ComboBox Width="150"
+                  Height="20"
+                  Name="firstItem"
+                  Margin="0,0,380,150"
+                  Style="{StaticResource ComboBoxTheme}"/>
+        <TextBox x:Name="firstItemAmount"
+                 Width="150"
+                 Height="20"
+                 Margin="0,100,380,150"
+                 />
+        <ComboBox Width="150"
+                  Height="20"
+                  Name="secondItem"
+                  Margin="380,0,0,150"
+                  Style="{StaticResource ComboBoxTheme}"/>
+        <TextBox x:Name="secondItemAmount"
+                 Width="150"
+                 Height="20"
+                 Margin="380,100,0,150"/>
+        <Button x:Name="BtnConvertor" Click="BtnConvertor_Click"
+                Width="70"
+                Height="70"
+                Margin="0,0,0,70">
+            <Image  Source="F:\CryptoCurrency\CryptoCurr\CryptoCurr\Images\back.jpg"
+                    Width="100"/>
+        </Button>
+    </Grid>
+</UserControl>
